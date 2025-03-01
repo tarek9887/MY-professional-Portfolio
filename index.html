@@ -7,42 +7,44 @@
     <title>Tarekul Islam's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-white font-sans text-gray-900">
+<body class="bg-green-50 font-sans text-gray-900">
     <!-- Navbar -->
-    <nav class="p-4 text-[18px] font-semibold flex justify-center items-center bg-green-700 text-white shadow-lg sticky top-0 z-50">
+    <nav id="navbar" class="p-4 text-[18px] font-semibold flex justify-center items-center bg-green-200 text-gray-800 shadow-lg sticky top-0 z-50">
         <div class="space-x-16">
-            <a href="#about" class="hover:text-green-300 transition duration-300">About</a>
-            <a href="#skills" class="hover:text-green-300 transition duration-300">Skills</a>
-            <a href="#projects" class="hover:text-green-300 transition duration-300">Projects</a>
-            <a href="#contact" class="hover:text-green-300 transition duration-300">Contact</a>
+            <a href="#about" class="hover:text-green-300 border-[2px] rounded-lg border-gray-700 px-3 py-1 transition duration-300">About</a>
+            <a href="#skills" class="hover:text-green-300 border-[2px] rounded-lg border-gray-700  px-3 py-1 transition duration-300">Skills</a>
+            <a href="#projects" class="hover:text-green-300 border-[2px] rounded-lg border-gray-700  px-3 py-1 transition duration-300">Projects</a>
+            <a href="#contact" class="hover:text-green-300 border-[2px] rounded-lg border-gray-70  border-gray-700 px-3 py-1 transition duration-300">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="about-section flex flex-col md:flex-row items-center justify-center p-12 bg-white">
+    <section class="about-section mt-[50px] flex flex-col md:flex-row items-center justify-center p-12 bg-green-50">
         <div class="image-wrapper mb-8 md:mb-0 md:mr-12">
-            <img src="WhatsApp Image 2025-02-27 at 21.09.26_7a6617b4.jpg" alt="Tarakul Islam" class="profile-image w-96 h-96 rounded-full border-4 border-green-800 shadow-lg animate__animated animate__fadeIn">
+            <img src="WhatsApp Image 2025-03-01 at 22.37.33_482877be.jpg" alt="Tarakul Islam" class="profile-image w-[400px] h-[400px] rounded-full bg-cover border-4 border-green-800 shadow-lg animate__animated animate__fadeIn">
         </div>
-        <div class="intro-text text-center md:text-left">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4 animate__animated animate__fadeIn">Hello, I am Tarakul Islam</h2>
+        <div id="hero" class="intro-text text-center md:text-left">
+            <h2 class="text-3xl  font-bold text-gray-800 mb-4 animate__animated animate__fadeIn">Hello, I am <span class="text-green-600">Tarakul Islam</span></h2>
             <p class="text-lg text-black animate__animated animate__fadeIn">Welcome to my portfolio</p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="p-12 bg-white">
+    <section id="about" class="p-14 bg-green-200">
         <div class="max-w-4xl mx-auto">
             <div class="card p-8 bg-green-50 rounded-lg shadow-lg mb-8 transform transition duration-500 hover:scale-105">
-                <h2 class="text-3xl font-bold text-green-800 mb-4">About Me</h2>
-                <p class="text-lg text-black">I am a computer science and engineering student with expertise in front-end development and software development. I specialize in HTML, CSS, Tailwind CSS, JavaScript, C, C++, and Dart.</p>
+                <h2 class="text-3xl font-bold  mb-4">About Me</h2>
+                <p class="text-lg text-black">I’m Tarekul Islam, a computer science and engineering student with a passion for front-end development and software development. I’m skilled in HTML, CSS, Dart, C++, and Tailwind CSS, and I’m always eager to learn and explore new technologies. Right now, I’m working on building a modern, data-driven React-based portfolio and participating in hackathons and research opportunities. I have a strong interest in space exploration and embedded systems, and I aim to create projects that make an impact while constantly improving my skills.</p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="p-12 bg-green-50">
+    <section id="skills" class="p-12 bg-green-100">
         <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Skill 1 -->
             <div class="card p-8 bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
@@ -78,9 +80,9 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="p-12 bg-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="card p-8 bg-green-50 rounded-lg shadow-lg mb-8">
+    <section id="projects" class="p-12  bg-white">
+        <div class="max-w-4xl  mx-auto text-center">
+            <div class="card p-8 bg-green-200 rounded-lg shadow-lg mb-8">
                 <h2 class="text-3xl font-bold text-green-800 mb-6">Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Project 1 -->
@@ -107,10 +109,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="p-12 bg-green-50">
+    <section id="contact" class="p-12 bg-white">
         <div class="max-w-4xl mx-auto">
-            <div class="card p-8 bg-white rounded-lg shadow-lg mb-8 transform transition duration-500 hover:scale-105">
-                <h2 class="text-3xl font-bold text-green-800 mb-6">Contact</h2>
+            <div class="card p-8 bg-green-50 rounded-lg shadow-lg mb-8 transform transition duration-500 hover:scale-105">
+                <h2 class="text-3xl  font-bold mb-8  mb-6">Contact</h2>
                 <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
                     <div class="mb-4">
                         <label for="name" class="block text-lg font-medium text-black mb-2">Your Name</label>
@@ -134,7 +136,7 @@
     <section id="connect" class="p-12 bg-white">
         <div class="max-w-4xl mx-auto">
             <div class="card p-8 bg-green-50 rounded-lg shadow-lg mb-8 transform transition duration-500 hover:scale-105">
-                <h2 class="text-3xl text-green-800 text-center font-bold text-gra mb-6">Connect with Me</h2>
+                <h2 class="text-3xl text-green-600 text-center font-bold text-gra mb-6">Connect with Me</h2>
                 <ul class="space-y-4 mt-10 mb-10 text-center justify-center">
                     <li><a href="https://www.linkedin.com/in/your-linkedin-id" class="text-slate-800 text-[19px] border-[2px] rounded px-[154px] py-1 border-green-800 hover:text-green-900 transition duration-300">LinkedIn</a></li>
                     <li><a href="https://www.facebook.com/Tarekul Islam EMou" class="text-slate-800 text-[19px] border-[2px] rounded px-[151px] py-1 border-green-800 hover:text-green-900 hover:text-green-900 transition duration-300">Facebook</a></li>
@@ -147,15 +149,15 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="h-[500px] bg-slate-800 text-white flex flex-col justify-center items-center">
+    <footer class="h-[400px] mt-[50px] bg-gray-800 text-white flex flex-col justify-center items-center">
         <div class="max-w-4xl mx-auto text-center">
             <p class="text-lg mb-4">&copy; 2025 Tarekul Islam. All rights reserved.</p>
-            <div class="flex justify-center space-x-6">
-                <a href="https://www.linkedin.com/in/your-linkedin-id" class="text-white hover:text-green-300 transition duration-300">LinkedIn</a>
-                <a href="https://www.facebook.com/Tarekul Islam EMou" class="text-white hover:text-green-300 transition duration-300">Facebook</a>
-                <a href="tarekulislamemou@gmail.com" class="text-white hover:text-green-300 transition duration-300">Email</a>
-                <a href="01889-557611" class="text-white hover:text-green-300 transition duration-300">Phone</a>
-                <a href="https://github.com/tarek9887" class="text-white hover:text-green-300 transition duration-300">GitHub</a>
+            <div class="flex text-[20px] font-semibold text-white justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/your-linkedin-id" class=" hover:text-green-300 transition duration-300">LinkedIn</a>
+                <a href="https://www.facebook.com/Tarekul Islam EMou" class="hover:text-green-300 transition duration-300">Facebook</a>
+                <a href="tarekulislamemou@gmail.com" class=" hover:text-green-300 transition duration-300">Email</a>
+                <a href="01889-557611" class=" hover:text-green-300 transition duration-300">Phone</a>
+                <a href="https://github.com/tarek9887" class=" hover:text-green-300 transition duration-300">GitHub</a>
             </div>
         </div>
     </footer>
